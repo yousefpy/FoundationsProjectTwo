@@ -34,13 +34,10 @@ class Cart():
 
     def print_receipt(self):
         print("Here's your receipt: ")
-        print(" ----------------------")
         for product in self.products:
             print(product)
-            print(" ----------------------")
 
-        total_price = self.get_total_price()
-        print("Your total price is: KD%s" % total_price)
+        print("Your total price is: KD%s" % self.get_total_price())
 
     def checkout(self):
         self.print_receipt()
