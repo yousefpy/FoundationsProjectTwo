@@ -1,6 +1,5 @@
 # TRIGGERING USER INTERFACE FUNCTIONALITY
-from data import stores, print_stores
-from model import Cart, welcome, shop, cart, thank_you
+from model import welcome, shop, cart, thank_you
 
 
 
