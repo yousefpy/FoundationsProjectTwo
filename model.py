@@ -1,5 +1,4 @@
 # CLASSES AND METHODS
-
 class Store():
     def __init__(self, name):
         self.name = name
@@ -15,7 +14,7 @@ class Product():
         self.price = price
 
     def __repr__(self):
-        return " Product: %s \n Description: %s \n Price: %s KWD" %(self.name, self.description, self.price)
+        return "\tProduct Name: %s\n\tDescription: %s\n\tPrice: %s KWD" %(self.name, self.description, self.price)
 
 
 class Cart():
@@ -36,10 +35,12 @@ class Cart():
         print("Here's your receipt: ")
         for product in self.products:
             print(product)
+            print()
 
         print("Your total price is: KD%s" % self.get_total_price())
 
     def checkout(self):
+        print("-----------------------------------")
         self.print_receipt()
         confirm = input("Confirm?(yes/no)")
         if confirm.lower() == "yes":
