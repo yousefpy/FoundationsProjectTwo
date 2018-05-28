@@ -1,5 +1,7 @@
 # CREATION OF DATA
 ####################### DO NOT MODIFY THE CODE BELOW ########################
+from model import Store, Product
+
 stores = []
 def create_product(store, name, description, price):
     product = Product(name, description, price)
