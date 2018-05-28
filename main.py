@@ -1,7 +1,6 @@
 # TRIGGERING USER INTERFACE FUNCTIONALITY
-from view import welcome, shop, cart, thank_you
+from view import welcome, shop, thank_you
 
 welcome()
 shop()
-cart.checkout()
 thank_you()
