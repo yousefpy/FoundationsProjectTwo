@@ -1,6 +1,6 @@
 # UTILS AND FUNCTIONALITY
 from data import stores
-from model import Cart
+from components import Cart
 
 site_name = ""  # Give your site a name
 
