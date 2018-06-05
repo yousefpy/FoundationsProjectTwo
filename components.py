@@ -26,7 +26,7 @@ class Product():
         """
         # your code goes here!
 
-    def __repr__(self):
+    def __str__(self):
         # your code goes here!
 
 
