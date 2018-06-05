@@ -21,7 +21,7 @@ class Product():
         self.description = description
         self.price = price
 
-    def __repr__(self):
+    def __str__(self):
         return "\tProduct Name: %s\n\tDescription: %s\n\tPrice: %s KWD" %(self.name, self.description, self.price)
 
 
