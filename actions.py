@@ -33,6 +33,9 @@ def pick_store():
     return picked_store
 
 def pick_products(cart, picked_store):
+    print("Pick the items you'd like to add in your cart by typing the product name exactly as it was spelled above.")
+    print("Type \"checkout\" to pay your bills and say your goodbyes.")
+    print("Type \"back\" to go back and shop at another store.")
     user_input = ""
     while user_input.lower() != "back" and user_input.lower() != "checkout":
         for product in picked_store.products:
@@ -52,11 +55,6 @@ def shop():
             break
 
         picked_store.print_products()
-
-        print("Pick the items you'd like to add in your cart by typing the product name exactly as it was spelled above.")
-        print("Type \"checkout\" to pay your bills and say your goodbyes.")
-        print("Type \"back\" to go back and shop at another store.")
-
         user_input = pick_products(cart, picked_store)
 
     cart.checkout()
