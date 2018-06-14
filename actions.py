@@ -35,6 +35,7 @@ def shop():
     """
     The main shopping functionality
     """
+    cart = Cart()
     # your code goes here!
 
 def thank_you():
